@@ -1,0 +1,4 @@
+export const ADMIN_WALLET_ADDRESS = process.env.REACT_APP_ADMIN_WALLET_ADDRESS;
+export const DUMMY_TOKEN_ADDRESS = process.env.REACT_APP_DUMMY_TOKEN_ADDRESS;
+export const ADMIN_ADDRESS = process.env.REACT_APP_ADMIN_ADDRESS;
+export const CHAIN_ID = process.env.REACT_APP_CHAIN_ID;
