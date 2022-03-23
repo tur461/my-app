@@ -1,12 +1,8 @@
 module.exports = {
     // ...
-    'custom-plugin': {
+    'coin-fluence-admin-panel': {
       enabled: true,
-      resolve: './src/plugins/custom-plugin'
-    },
-    'seo-demo': {
-        enabled: true,
-        resolve: './src/plugins/seo-demo'
-      },
+      resolve: './src/plugins/coin-fluence-admin-panel'
+    }
     // ...
   }
