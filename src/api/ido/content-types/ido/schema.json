@@ -1,0 +1,112 @@
+{
+  "kind": "collectionType",
+  "collectionName": "idos",
+  "info": {
+    "singularName": "ido",
+    "pluralName": "idos",
+    "displayName": "IDO Creation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProjectName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "tokenImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "SaleTokenAddress": {
+      "type": "string",
+      "required": true
+    },
+    "TotalSupply": {
+      "type": "biginteger",
+      "required": true
+    },
+    "OwnerAddress": {
+      "type": "string",
+      "required": true
+    },
+    "BeneficiaryAdress": {
+      "type": "string",
+      "required": true
+    },
+    "PublicSaleEnabled": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "WhiteListingNeeded": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "PrivateAllocationRatioN": {
+      "type": "integer",
+      "required": true
+    },
+    "PublicAllocationRatioN": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "AllocationSharePerParticipant_in_busd": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Hardcap_in_busd": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Softcap_in_busd": {
+      "type": "biginteger",
+      "required": true
+    },
+    "ProfitPercentageValue__100_for_1": {
+      "type": "integer",
+      "required": true,
+      "default": 300
+    },
+    "PrivateSaleStart": {
+      "type": "datetime",
+      "required": true
+    },
+    "PrivateSaleEnd": {
+      "type": "datetime",
+      "required": true
+    },
+    "PublicSaleStart": {
+      "type": "datetime"
+    },
+    "PublicSaleEnd": {
+      "type": "datetime"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "Finalized",
+        "Created",
+        "PrivateSale",
+        "PublicSale",
+        "Rejected",
+        "Completed"
+      ],
+      "required": true,
+      "default": "New"
+    }
+  }
+}
